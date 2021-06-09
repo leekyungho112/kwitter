@@ -74,7 +74,6 @@ const Kweet = ({ kweetObj, isOwner }) => {
       ) : (
         <>
           <h4>{kweetObj.text}</h4>
-          <h6>{kweetObj.createdAt}</h6>
           {kweetObj.attachmentUrl && (
             <img
               src={kweetObj.attachmentUrl}
