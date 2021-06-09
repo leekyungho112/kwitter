@@ -32,6 +32,7 @@ const KweetFactory = ({ userObj }) => {
     setKweet('');
     setAttachment('');
   };
+
   const onChange = (e) => {
     const {
       target: { value },

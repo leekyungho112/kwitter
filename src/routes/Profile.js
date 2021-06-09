@@ -1,5 +1,5 @@
-import { authService, dbService, storageService } from 'fbase';
-import React, { useEffect, useRef, useState } from 'react';
+import { authService, storageService } from 'fbase';
+import React, { useRef, useState } from 'react';
 import { useHistory } from 'react-router-dom';
 import { v4 as uuidv4 } from 'uuid';
 import styles from 'routes/Profile.module.css';
@@ -16,20 +16,6 @@ const Profile = ({ userObj, refreshUser }) => {
     authService.signOut();
     history.push('/');
   };
-
-  const getMyKweets = async () => {
-    const kweets = await dbService
-      .collection('kweets')
-      .where('createrId', '==', userObj.uid)
-      .orderBy('createdAt', 'desc')
-      .get();
-    console.log(kweets.docs.map((doc) => doc.data()));
-  };
-
-  useEffect(() => {
-    getMyKweets();
-    return () => setSaving(false);
-  }, []);
 
   const onChange = (event) => {
     const {
