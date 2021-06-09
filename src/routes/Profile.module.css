@@ -59,6 +59,7 @@
 .cancelBtn {
   cursor: pointer;
   background-color: tomato;
+  box-sizing: border-box;
 }
 .logOut {
   margin-top: 50px;
