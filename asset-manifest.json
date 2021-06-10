@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/kwitter/static/css/main.189ff23c.chunk.css",
-    "main.js": "/kwitter/static/js/main.ce0c39fd.chunk.js",
-    "main.js.map": "/kwitter/static/js/main.ce0c39fd.chunk.js.map",
+    "main.css": "/kwitter/static/css/main.be4a7da0.chunk.css",
+    "main.js": "/kwitter/static/js/main.a44ce548.chunk.js",
+    "main.js.map": "/kwitter/static/js/main.a44ce548.chunk.js.map",
     "runtime-main.js": "/kwitter/static/js/runtime-main.86629909.js",
     "runtime-main.js.map": "/kwitter/static/js/runtime-main.86629909.js.map",
-    "static/js/2.eb705fa1.chunk.js": "/kwitter/static/js/2.eb705fa1.chunk.js",
-    "static/js/2.eb705fa1.chunk.js.map": "/kwitter/static/js/2.eb705fa1.chunk.js.map",
+    "static/js/2.73c1346e.chunk.js": "/kwitter/static/js/2.73c1346e.chunk.js",
+    "static/js/2.73c1346e.chunk.js.map": "/kwitter/static/js/2.73c1346e.chunk.js.map",
     "index.html": "/kwitter/index.html",
-    "static/css/main.189ff23c.chunk.css.map": "/kwitter/static/css/main.189ff23c.chunk.css.map",
-    "static/js/2.eb705fa1.chunk.js.LICENSE.txt": "/kwitter/static/js/2.eb705fa1.chunk.js.LICENSE.txt"
+    "static/css/main.be4a7da0.chunk.css.map": "/kwitter/static/css/main.be4a7da0.chunk.css.map",
+    "static/js/2.73c1346e.chunk.js.LICENSE.txt": "/kwitter/static/js/2.73c1346e.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.86629909.js",
-    "static/js/2.eb705fa1.chunk.js",
-    "static/css/main.189ff23c.chunk.css",
-    "static/js/main.ce0c39fd.chunk.js"
+    "static/js/2.73c1346e.chunk.js",
+    "static/css/main.be4a7da0.chunk.css",
+    "static/js/main.a44ce548.chunk.js"
   ]
 }
