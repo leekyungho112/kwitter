@@ -42,7 +42,7 @@ const AuthForm = () => {
       }
 
       console.log(data);
-      window.location.replace('/');
+      window.location.replace('/kwitter');
     } catch (error) {
       setError(error.message);
     }
