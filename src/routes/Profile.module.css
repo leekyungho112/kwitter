@@ -33,6 +33,7 @@
   background-color: #04aaff;
   cursor: pointer;
   margin-top: 10px;
+  box-sizing: border-box;
 }
 .img {
   width: 80px;
@@ -59,7 +60,6 @@
 .cancelBtn {
   cursor: pointer;
   background-color: tomato;
-  box-sizing: border-box;
 }
 .logOut {
   margin-top: 50px;

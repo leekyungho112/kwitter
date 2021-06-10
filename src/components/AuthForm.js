@@ -7,6 +7,7 @@ const AuthForm = () => {
   const [password, setPassword] = useState('');
   const [newAccount, setNewAccount] = useState(true);
   const [error, setError] = useState('');
+
   const onChange = (e) => {
     const {
       target: { value, name },
@@ -17,21 +18,31 @@ const AuthForm = () => {
       setPassword(value);
     }
   };
+
   const onSubmit = async (e) => {
     e.preventDefault();
     try {
       let data;
+
       if (newAccount) {
         // create account
-        data = await authService.createUserWithEmailAndPassword(
-          email,
-          password
-        );
+        data = await authService
+          .createUserWithEmailAndPassword(email, password)
+          .then((userCredential) => {
+            const user = userCredential.user;
+            user.updateProfile({
+              displayName: user.email,
+              photoURL:
+                'https://w7.pngwing.com/pngs/858/581/png-transparent-profile-icon-user-computer-icons-system-chinese-wind-title-column-miscellaneous-service-logo.png',
+            });
+          });
       } else {
         // log in
         data = await authService.signInWithEmailAndPassword(email, password);
       }
+
       console.log(data);
+      window.location.replace('/');
     } catch (error) {
       setError(error.message);
     }

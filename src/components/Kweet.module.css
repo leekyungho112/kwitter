@@ -40,6 +40,12 @@
 
 .kweet h4 {
   font-size: 14px;
+  margin-top: 5px;
+}
+.kweet h6 {
+  font-size: 12px;
+  margin-left: 25px;
+  margin-bottom: 10px;
 }
 
 .img {
@@ -49,6 +55,15 @@
   border-radius: 50%;
   width: 50px;
   height: 50px;
+  margin-top: 10px;
+}
+.avatar {
+  left: 3px;
+  bottom: 35px;
+  position: absolute;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
   margin-top: 10px;
 }
 

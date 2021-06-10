@@ -24,6 +24,8 @@ const KweetFactory = ({ userObj }) => {
 
     const kweetObj = {
       text: kweet,
+      author: userObj.displayName,
+      avatar: userObj.photoURL,
       createdAt: Date.now(),
       createrId: userObj.uid,
       attachmentUrl,

@@ -73,6 +73,12 @@ const Kweet = ({ kweetObj, isOwner }) => {
         </>
       ) : (
         <>
+          <img
+            src={kweetObj.avatar}
+            alt={kweetObj.author}
+            className={styles.avatar}
+          />
+          <h6>{kweetObj.author}</h6>
           <h4>{kweetObj.text}</h4>
           {kweetObj.attachmentUrl && (
             <img

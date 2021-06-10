@@ -24,6 +24,7 @@ const Profile = ({ userObj, refreshUser }) => {
 
     setNewDisplayName(value);
   };
+
   const onSubmit = async (event) => {
     event.preventDefault();
     if (!saving) {
