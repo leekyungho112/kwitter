@@ -19,6 +19,7 @@
   text-align: center;
   background-color: white;
   color: black;
+  box-sizing: border-box;
 }
 
 .formBtn {
@@ -30,6 +31,7 @@
   border-radius: 20px;
   background-color: #04aaff;
   cursor: pointer;
+  box-sizing: border-box;
 }
 
 .kweetEdit .formBtn {

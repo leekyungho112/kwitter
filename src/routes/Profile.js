@@ -38,7 +38,11 @@ const Profile = ({ userObj, refreshUser }) => {
       }
       let avatarUrl = '';
       //profile photo update
-      if (userObj.photoURL !== avatar) {
+      if (
+        userObj.photoURL !== avatar ||
+        userObj.photoURL !==
+          'https://w7.pngwing.com/pngs/858/581/png-transparent-profile-icon-user-computer-icons-system-chinese-wind-title-column-miscellaneous-service-logo.png'
+      ) {
         const avatarRef = storageService
           .ref()
           .child(`${userObj.uid}/${uuidv4()}`);
@@ -48,6 +52,7 @@ const Profile = ({ userObj, refreshUser }) => {
           photoURL: avatarUrl,
         });
         await storageService.refFromURL(userObj.photoURL).delete();
+
         refreshUser();
       }
     }
